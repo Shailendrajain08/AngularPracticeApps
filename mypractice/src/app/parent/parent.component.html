@@ -1,0 +1,10 @@
+<div>
+  <h1>Parent Component</h1>
+  <label for="item-input">Add an item:</label>
+  <input type="text" id="item-input" placeholder="Enter Something" #item>
+  <button (click)="addToChild(item.value)">Add to Child</button>
+</div>
+
+
+
+<app-chile [item] = newItemEmit></app-chile>

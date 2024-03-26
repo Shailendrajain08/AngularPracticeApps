@@ -1,0 +1,17 @@
+<div class="parent">
+<h1>Parent Component</h1>
+<!-- <button (click)="sendData()">Send Data</button> -->
+
+
+<form #myform = "ngForm" (ngSubmit) = sendData(myform) >
+  <input type="text" name="myname" placeholder="What is you Name" ngModel>
+  <br><br>
+  <input type="submit" value="submit">
+
+</form>
+
+<div>
+<app-child></app-child>
+</div>
+
+</div>

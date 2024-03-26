@@ -1,0 +1,12 @@
+<div style="height: 300px; background-color: darkgray; border: 1px solid;">
+    <h1>Parent Component</h1>
+    <form #myform = "ngForm" (ngSubmit)="sendDataToChild(myform)">
+      <input type="text" name="fullName" placeholder="Type Your Name" ngModel>
+      <br>
+      <input type="submit" value="Send">
+    </form>
+
+    <div style="padding: 20px;">
+        <app-inner></app-inner>
+    </div>
+</div>
